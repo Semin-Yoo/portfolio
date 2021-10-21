@@ -1,0 +1,256 @@
+.bullet-logo {
+  height: 16px;
+  margin: 0 30px 0 0;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 120px 0;
+}
+
+.projects-card {
+  display: flex;
+  height: 500px;
+  width: 1000px;
+  box-shadow: 0 0px 20px -2px #393939;
+  background-color: #f9f9f9;
+}
+
+.projects-bullets {
+  height: 100%;
+  box-shadow: 15px 0 9px -15px #393939;
+  width: 260px;
+}
+
+.projects-bullets-details {
+  flex-grow: 1;
+  width: 340px;
+  overflow: hidden;
+  padding: 0 0 0 70px;
+}
+
+.experience-description {
+  text-align: justify;
+  max-width: 90%;
+}
+
+.projects-details-carousal {
+  transition: transform 0.7s ease-out;
+}
+
+.bullets-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bullets {
+  width: 80%;
+  position: relative;
+  z-index: 2;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  background-color: #393939;
+  height: 40px;
+  margin: 15px 0;
+  padding: 0 8px;
+  border-radius: 20px;
+  width: 30px;
+  transition: width 0.6s ease;
+  cursor: pointer;
+}
+
+.bullet-label {
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: "Roboto bold";
+}
+
+.bullet-logo {
+  height: 16px;
+  margin: 0 30px 0 0;
+}
+
+.bullets-icon {
+  width: 34px;
+  height: 100%;
+  z-index: 1;
+  background-color: #393939;
+  position: absolute;
+}
+
+.selected-bullet {
+  color: #f9f9f9;
+  width: 100%;
+}
+
+.projects-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 490px;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.projects-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-main-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto Black";
+  font-size: 17px;
+}
+
+.heading-bullet {
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  background-color: #000;
+  border-radius: 40%;
+  transform: scale(80%);
+}
+
+.projects-sub-heading {
+  font-size: 15px;
+  font-family: "Roboto Bold";
+  color: #111;
+}
+
+.projects-heading-description {
+  font-size: 13px;
+  text-align: justify;
+  width: 90%;
+}
+
+.projects-description-text {
+  font-size: 13px;
+}
+
+.projects-description-text1 {
+  font-size: 13px;
+}
+
+.heading-date {
+  background-color: #f9f9f9;
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  margin-right: 40px;
+}
+
+.projects-options {
+  text-align: center;
+}
+
+.projects-options .primary-btn {
+  transform: scale(0.8);
+  margin-top: 10px;
+}
+
+.project-options .primary-btn {
+  transform: scale(0.8);
+  margin-bottom: -20px;
+  margin-top: 10px;
+  margin-left: -60px;
+}
+
+.projects-options .primary-btn:hover {
+  background-color: #393939;
+}
+
+@media only screen and (max-width: 1110px) {
+  .projects-card {
+    width: 880px;
+  }
+
+  .projects-bullets-details {
+    padding: 0 0 0 70px;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullets {
+    width: 90%;
+  }
+
+  .projects-card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    width: 90%;
+  }
+
+  .projects-bullets-details {
+    height: 500px;
+    width: fit-content;
+    padding: 0;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+
+  .heading-date {
+    display: none;
+  }
+
+  .projects-bullets {
+    width: 100%;
+    margin: 30px;
+  }
+
+  .selected-bullet {
+    width: 100%;
+  }
+
+  .project-options .primary-btn {
+    margin-bottom: 30px;
+    margin-left: -5px;
+  }
+
+  .projects-heading-description {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .projects-bullets-details {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .projects-description-text1 {
+    display: none;
+  }
+
+  .projects-options .primary-btn {
+    display: none;
+  }
+
+  .project-options .primary-btn {
+    display: none;
+  }
+}

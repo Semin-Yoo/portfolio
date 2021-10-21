@@ -1,0 +1,104 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+  background-color: #ffe135;
+  min-height: 890px;
+}
+
+.about-parent {
+  max-width: 1000px;
+  width: 70%;
+}
+
+.about-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0px 20px -2px #1f2235;
+  background-color: #f9f9f9;
+}
+
+.about-profile {
+  width: 50%;
+  background-image: url("../../assets/AboutMe/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-details {
+  width: 48%;
+  text-align: left;
+  padding: 45px;
+}
+
+.about-description {
+  font-size: 15px;
+  white-space: pre-wrap;
+}
+.about-highlights {
+  margin: 80px 0;
+}
+.highlight-heading {
+  font-family: "Roboto Medium";
+  font-size: 15px;
+  margin: 0 0 15px 0;
+}
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.highlight-blob {
+  height: 12px;
+  width: 12px;
+  margin: 0 10px 0 0;
+  background-color: #000;
+  border-radius: 30%;
+  transform: scale(0.8);
+}
+
+.about-options {
+  text-align: center;
+}
+
+.about-options .highlighted-btn {
+  margin: 0 0 0 50px;
+}
+
+/*IPAD-Pro*/
+@media only screen and (max-width: 1110px) {
+  .about-details {
+    padding: 30px;
+  }
+  .about-parent {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .about-profile {
+    display: none;
+  }
+  .about-details {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 466px) {
+  .about-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+
+  .about-options button {
+    width: 100%;
+  }
+}
