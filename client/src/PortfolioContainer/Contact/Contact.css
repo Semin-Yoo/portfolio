@@ -8,7 +8,7 @@
 
 .central-form {
   display: flex;
-  background-image: url("../../assets/Contact/Envelope.png");
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
