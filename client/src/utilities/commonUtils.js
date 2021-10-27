@@ -21,6 +21,8 @@ export const TOTAL_SCREENS = [
     screen_name: "Contact",
     component: Contact,
   },
+
+  
 ];
 
 export const GET_SCREEN_INDEX = (screen_name) => {

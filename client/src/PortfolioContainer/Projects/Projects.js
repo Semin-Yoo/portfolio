@@ -24,7 +24,7 @@ const Projects = (props) => {
           <span>{props.heading ? props.heading : ""}</span>
           {props.fromDate && props.toDate ? (
             <div className="heading-date">
-              {props.fromDate + "-" + props.toDate}
+              {props.fromDate + " - " + props.toDate}
             </div>
           ) : (
             <div></div>
@@ -46,12 +46,13 @@ const Projects = (props) => {
   const projectsBullets = [
     { label: "Programming", logoSrc: "coding.png" },
     { label: "Blockchain", logoSrc: "blockchain.png" },
+    { label: "UI / UX", logoSrc: "design.png" },
   ];
 
   const programmingDetails = [
     {
       title: "TileWorld",
-      duration: { fromDate: "2021", toDate: "2021" },
+      duration: { fromDate: "Jul 2021", toDate: "Aug 2021" },
       description:
         "Designed and implemented 2D-tile based world exploration engine. User can explore by walking around and interacting with objects in that world.",
       subHeading: "Java, JavaScript",
@@ -66,7 +67,7 @@ const Projects = (props) => {
 
     {
       title: "Gitlet",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "Nov 2020", toDate: "Jul 2021" },
       description:
         "Implemented a version-control system that mimics some of the features of Git. ",
       subHeading: "Java",
@@ -74,7 +75,7 @@ const Projects = (props) => {
 
     {
       title: "Deque",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "Sep 2020", toDate: "Oct 2020" },
       description:
         "Implemented deque API (LinkedListDeque, ArrayListDeque) and used it to implement the Karplus-Strong algorithm to synthesize a guitar string sound.",
       subHeading: "Java",
@@ -82,10 +83,27 @@ const Projects = (props) => {
 
     {
       title: "SAT Score Report Generator",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "Jun 2021", toDate: "Aug 2021" },
       description:
         "Developed auto-grading + score-analysis report generator for SAT. ",
       subHeading: "Python",
+    },
+  ];
+
+  const UIUXdetails = [
+    {
+      title: "Class Z",
+      duration: { fromDate: "Jul 2021", toDate: "Aug 2021" },
+      description:
+        "Enhanced UI/UX of Class Z, a learning platform that provides live session service. Designed application pages for practitioners.",
+      subHeading: "Figma",
+      button: (
+        <div className="project-options">
+          <a href="https://seminyoo.notion.site/Class-Z-84456396891a46c4a4b5aed2b355577d">
+            <button className="btn primary-btn">View Details</button>
+          </a>
+        </div>
+      ),
     },
   ];
 
@@ -109,8 +127,8 @@ const Projects = (props) => {
         <ProjectsHeading
           heading={"UNICEF X Blockchain@Berkeley"}
           subHeading={"UI/UX, Frontend"}
-          fromDate={"2020"}
-          toDate={"present"}
+          fromDate={"Aug 2021"}
+          toDate={"Present"}
         />
         <div className="experience-description">
           <span className="projects-description-text">
@@ -141,8 +159,8 @@ const Projects = (props) => {
         <ProjectsHeading
           heading={"Humanitarian Aid X Blockchain@Berkeley"}
           subHeading={"UI/UX"}
-          fromDate={"2020"}
-          toDate={"2021"}
+          fromDate={"Dec 2020"}
+          toDate={"Aug 2021"}
         />
         <div className="experience-description">
           <span className="projects-description-text">
@@ -161,12 +179,26 @@ const Projects = (props) => {
           </span>
 
           <div className="projects-options">
-            <a href="https://sumptuous-lily-ba3.notion.site/Blockchain-X-Humanitarian-Aid-e3e360fb213148bf997d8249cf819483">
+            <a href="https://seminyoo.notion.site/Blockchain-X-Humanitarian-Aid-cdf8def2c7d1470ea09f513c1ed0244c">
               <button className="btn primary-btn">View Details</button>
             </a>
           </div>
         </div>
       </div>
+    </div>,
+
+    <div className="projects-screen-container" key="UI / UX">
+      {UIUXdetails.map((UIUXdetails, index) => (
+        <ProjectsHeading
+          key={index}
+          heading={UIUXdetails.title}
+          subHeading={UIUXdetails.subHeading}
+          description={UIUXdetails.description}
+          fromDate={UIUXdetails.duration.fromDate}
+          toDate={UIUXdetails.duration.toDate}
+          button={UIUXdetails.button}
+        />
+      ))}
     </div>,
   ];
 
