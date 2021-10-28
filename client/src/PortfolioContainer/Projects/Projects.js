@@ -58,7 +58,7 @@ const Projects = (props) => {
       subHeading: "Java, JavaScript",
       button: (
         <div className="project-options">
-          <a href="https://sumptuous-lily-ba3.notion.site/BYOW-c679671526ea43f4a2237fe6ef68f38d">
+          <a href="https://seminyoo.notion.site/BYOW-c679671526ea43f4a2237fe6ef68f38d">
             <button className="btn primary-btn">View Details</button>
           </a>
         </div>
